@@ -1,3 +1,22 @@
 {
-    "$schema": "./commands-schema.json"
+    "$schema": "./commands-schema.json",
+    "commands": {
+        "hello": {
+            "handler": [
+                {
+                    "component": "spinner",
+                    "output": [
+                        "Loading hello world",
+                        "Still loading",
+                        "Hello world loaded successfully"
+                    ],
+                    "duration": "random"
+                },
+                {
+                    "component": "text",
+                    "output": "Hello world! :)"
+                }
+            ]
+        }
+    }
 }
